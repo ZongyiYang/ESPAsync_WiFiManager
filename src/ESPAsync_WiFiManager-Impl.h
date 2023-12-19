@@ -727,18 +727,6 @@ void ESPAsync_WiFiManager::loop()
 
 //////////////////////////////////////////
 
-void ESPAsync_WiFiManager::setInfo()
-{
-  if (needInfo)
-  {
-    pager       = infoAsString();
-    wifiStatus  = WiFi.status();
-    needInfo    = false;
-  }
-}
-
-//////////////////////////////////////////
-
 // Anything that accesses WiFi, ESP or EEPROM goes here
 
 void ESPAsync_WiFiManager::criticalLoop()

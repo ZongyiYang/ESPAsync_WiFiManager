@@ -955,7 +955,6 @@ class ESPAsync_WiFiManager
     
     wl_status_t   waitForConnectResult();
     
-    void          setInfo();
     String        networkListAsString();
     
     void          handleRoot(AsyncWebServerRequest *request);
